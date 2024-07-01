@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Define o modo de execução da aplicação
-MODE = os.getenv("MODE")
+MODE = os.getenv("MODE", "DEVELOPMENT")
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
